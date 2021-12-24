@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Excercise05</title>
+</head>
+<body>
+<script>
+    let arr1 = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus'];
+    let arr2 = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo'];
+    let index = -1;
+
+    function checkStar(star) {
+
+        if (arr1.indexOf(star) != -1) {
+            index = arr1.indexOf(star);
+            return true;
+        }
+        return false;
+    }
+
+    let star = prompt('Nhập tên ngôi sao để kiểm tra: ');
+    if (checkStar(star)) {
+        alert(arr2[index]);
+    } else {
+        alert("Không có chòm sao bạn tìm");
+    }
+</script>
+</body>
+</html>
